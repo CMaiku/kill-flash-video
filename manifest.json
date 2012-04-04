@@ -1,0 +1,11 @@
+{
+  "name": "Kill Flash Video",
+  "version": "0.0.1",
+  "description": "Replaces flash video with HTML5's video tag",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["overrides.js", "html5.js"]
+    }
+  ]
+}
